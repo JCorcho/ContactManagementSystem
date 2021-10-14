@@ -25,7 +25,7 @@ public:
     std::string GetStreet();
     std::string GetApt();
     std::string GetState();
-    int GetZip();
+    int GetZip() const;
 
     // Setters
     void SetID(int id_input);

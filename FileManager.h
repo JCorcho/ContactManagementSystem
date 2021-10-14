@@ -2,7 +2,6 @@
 // Created by Jacob Corcho on 10/11/21.
 //
 
-#pragma once
 
 #include "Contact.h"
 #include <vector>
@@ -13,7 +12,7 @@ class FileManager {
 public:
     void Open(std::ios_base::openmode mode);
     void Close();
-    void SaveInput(bool final = false);
+    void SaveInput(const std::string& input = "", bool final = false);
     void ConfigureSettings();
     const std::vector<Contact> & ParseContactsFromFile();
     std::fstream db; // db object

@@ -24,7 +24,7 @@ std::string Address::GetState() {
     return state;
 }
 
-int Address::GetZip() {
+int Address::GetZip() const {
     return zip;
 }
 

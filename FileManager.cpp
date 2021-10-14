@@ -3,8 +3,6 @@
 // small edits made by @WorldWalker 10/12/21. (helped me with the argument type for Open and Close methods)
 //
 
-#pragma once
-
 #include <iostream>
 #include <algorithm>
 #include "FileManager.h"
@@ -21,9 +19,8 @@ void FileManager::Close() {
     db.close();
 }
 
-void FileManager::SaveInput(bool final) {
-    std::getline(std::cin, tempInput);
-    db << tempInput;
+void FileManager::SaveInput(const std::string& input, bool final) {
+    db << input;
     if (!final)
         db << ",";
 }

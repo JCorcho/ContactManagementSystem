@@ -14,6 +14,7 @@ public:
     void CreateContact();
     static void DisplayContact(Contact c);
     void DisplayContacts();
+    long GetSize();
     Contact GetContact(int id);
     FileManager fm;
 private:
